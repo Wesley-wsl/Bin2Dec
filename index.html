@@ -10,22 +10,23 @@
 </head>
 
 <body>
-
     <main>
         <section class="container">
             <h1>Bin2Dec</h1>
 
             <div>
-                <label for="binario">Número binário</label>
-                <input type="text" name="input">
+                <label>Número binário</label>
+                <input type="text" name="input" placeholder="Insira 0 ou 1">
             </div>
 
             <div>
-                <label for="decimal">Número decimal</label>
-                <input type="text" name="output" disabled>
+                <label>Número decimal</label>
+                <input type="text" name="output" readonly>
             </div>
 
-            <p></p>
+            <p id="error"></p>
+
+            <button data-js='convert'>Converter</button>
         </section>
 
     </main>
